@@ -42,6 +42,8 @@ button, input, textarea
 button
 	padding: 0
 	cursor: pointer
+	&:focus
+		outline: none
 
 .container
 	margin-right: auto
@@ -54,6 +56,13 @@ button
 		max-width: 1200px
 		padding: 0 15px
 
+
+.fd-row
+	flex-direction: row
+
+.fd-row-reverse
+	flex-direction: row-reverse
+	
 .justify-end
 	align-items: flex-end
 	text-align: right
@@ -85,3 +94,6 @@ button
 
 .badge--orange
 	background-color: #df5f37
+
+.mix
+	display: none

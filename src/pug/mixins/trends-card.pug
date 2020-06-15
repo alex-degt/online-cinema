@@ -1,0 +1,18 @@
+mixin trendsCard(objData)
+	each item in objData
+		div(class="trends-card mix " + item.mixClass)
+			a(href="" + item.link).trends-card__img
+				img(src="./img/popular-serials/" + item.img + ".jpg" , alt="" + item.img)
+			a(href="#!").trends-card__title #{item.title}
+			.trends-card__footer
+				.trends-card__year #{item.year}
+				.trends-card__assessment
+					.trends-card__like
+						label
+							input(type="checkbox" class="like-checkbox")
+							.custom-like-checkbox
+						label
+							input(type="checkbox" class="watched-checkbox")
+							.custom-watched-checkbox
+						.trends-card__rate #{item.rate}
+	

@@ -1,0 +1,214 @@
+.section-trends
+	padding: 50px 0
+	background-color: #020d18
+
+.adv
+	display: flex
+	justify-content: center
+	margin-bottom: 50px
+
+
+.trends__title
+	margin-bottom: 25px
+	text-transform: uppercase
+	color: #b0b0b0
+	font-size: 14px
+	font-weight: 300
+
+.trends__filters
+	max-width: 950px
+	margin-right: auto
+	margin-bottom: 55px
+	margin-left: auto
+	position: relative
+	height: 30px
+
+.trends__filter
+	height: 26px
+	padding: 0 14px
+	color: #ffffff
+	border: none
+	border-radius: 13px
+	outline: none
+	background-color: #15202b
+	font-size: 12px
+	&:last-child
+		margin-right: 0
+	&:hover
+		transition: 0.4s ease
+		background-color: #fe0f20
+
+.trends__filter--active
+	background-color: #fe0f20
+
+.trends-card--wrapper
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+.trends-card
+	display: none
+	width: 222px
+	margin-right: 15px
+	margin-bottom: 60px
+	&:nth-child(5n)
+		margin-right: 0
+	&:hover
+		.trends-card__img
+			&:before
+				transition: 0.4s ease
+				background-color: rgba(0, 0, 0, 0)
+
+.trends-card__img
+	position: relative
+	display: block
+	width: 222px
+	height: 197px
+	margin-bottom: 25px
+	img
+		width: 100%
+		height: 100%
+
+		object-fit: cover
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		content: ""
+		background-color: rgba(0, 0, 0, 0.4)
+
+
+.trends-card__title
+	display: inline-block
+	margin-bottom: 20px
+	color: #ffffff
+	font-weight: 500
+	&:hover
+		color: #ffffff
+	&:active
+		color: #fe0f20
+
+.trends-card__footer
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.trends-card__year
+	color: #4c4c4c
+	font-size: 14px
+	font-weight: 500
+
+.trends-card__assessment
+	display: flex
+	align-items: baseline
+	flex-direction: row
+	flex-wrap: no-wrap
+	justify-content: space-between
+
+.trends-card__rate
+	position: relative
+	display: inline-block
+	color: #f4dd1e
+	font-size: 10px
+	font-weight: 500
+	&:before
+		position: absolute
+		top: -1px
+		left: -14px
+		width: 11px
+		height: 10px
+		content: ""
+		background-image: url("../img/icons/star.png")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+
+.trends-card__like
+	label
+		margin-right: 30px
+
+.like-checkbox,
+.watched-checkbox
+	display: none
+
+.like-checkbox:checked + .custom-like-checkbox:before
+	background-image: url("../img/icons/heart-red.png")
+
+.custom-like-checkbox
+	position: relative
+	display: inline-block
+	width: 10px
+	height: 10px
+	cursor: pointer
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 11px
+		height: 9px
+		margin: auto
+		content: ""
+		background-image: url("../img/icons/heart.png")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+
+
+.watched-checkbox:checked + .custom-watched-checkbox:before
+	background-image: url("../img/icons/watched-red.png")
+
+.custom-watched-checkbox
+	position: relative
+	display: inline-block
+	width: 10px
+	height: 10px
+	cursor: pointer
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 13px
+		height: 9px
+		margin: auto
+		content: ""
+		background-image: url("../img/icons/watched.png")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+
+
+.slider-two .owl-nav button.owl-next
+	position: absolute
+	top: 35px
+	right: -3%
+	transition: 0.5s ease
+	transform: translateY(-100%)
+	color: #565656
+	font-size: 50px
+	&:hover
+		color: lighten(#565656, 30%)
+	&:active
+		color: #ffffff
+	&:focus
+		outline: none
+	
+.slider-two .owl-nav button.owl-prev
+	position: absolute
+	top: 35px
+	left: -3%
+	transition: 0.5s ease
+	transform: translateY(-100%)
+	color: #565656
+	font-size: 50px
+	&:hover
+		color: lighten(#565656, 30%)
+	&:active
+		color: #ffffff
+	&:focus
+		outline: none

@@ -1,0 +1,38 @@
+section.section-trends
+	.container
+		a(href="#!").adv
+			img(src="./img/970x90.png" alt="adv")
+		.trends--wrapper
+			h4.trends__title TRENDS NOW
+			nav.trends__filters
+				.owl-carousel.slider-two
+					button.trends__filter(data-filter="all").filter All
+					button.trends__filter(data-filter=".Adventure").filter Adventure
+					button.trends__filter(data-filter=".Action").filter Action
+					button.trends__filter(data-filter=".Animation").filter Animation
+					button.trends__filter(data-filter=".Biography").filter Biography
+					button.trends__filter(data-filter=".Crime").filter Crime
+					button.trends__filter(data-filter=".Comedy").filter Comedy
+					button.trends__filter(data-filter=".Drama").filter Drama
+					button.trends__filter(data-filter=".Documentary").filter Documentary
+					button.trends__filter(data-filter=".Fantasy").filter Fantasy
+					button.trends__filter(data-filter=".Horror").filter Horror
+			.trends-card--wrapper#trends-card--wrapper
+				+trendsCard([
+					{link: '#!', mixClass: 'Adventure Action Biography', img: 'lucifer', title: 'Lucifer - Prime Exclusive', year: '2016', rate: '8.1'},
+					{link: '#!', mixClass: 'Crime', img: 'avengers', title: 'The Avengers - Assemble', year: '2012', rate: '9.1'},
+					{link: '#!', mixClass: 'Fantasy Horror', img: 'the-defenders', title: 'The Defenders', year: '2017', rate: '7.4'},
+					{link: '#!', mixClass: 'Comedy Crime Adventure Action', img: 'prison-break', title: 'Prison Break - Season 5', year: '2017', rate: '8.4'},
+					{link: '#!', mixClass: 'Comedy Crime Adventure Action', img: 'black-list', title: 'All The Blacklist - Season 6', year: '2019', rate: '8.1'},
+					{link: '#!', mixClass: 'Action Fantasy', img: 'the-100', title: 'The 100 - Season 6', year: '2019', rate: '7.8'},
+					{link: '#!', mixClass: 'Documentary Drama', img: 'gotham', title: 'Gotham - Season 5', year: '2018', rate: '7.3'},
+					{link: '#!', mixClass: 'Adventure Action', img: 'game', title: 'Game Of Thrones - Season 8', year: '2019', rate: '9.7'},
+					{link: '#!', mixClass: 'Comedy Crime', img: 'ozark', title: 'Ozark - Season 3', year: '2019', rate: '8.6'},
+					{link: '#!', mixClass: 'Biography Action', img: 'breaking-bad', title: 'Breaking Bad - All seasons', year: '2007', rate: '9.9'},
+					{link: '#!', mixClass: 'Adventure Action Animation', img: 'spanch-bob', title: 'Spanch Bob - Season 17', year: '2019', rate: '6.2'},
+					{link: '#!', mixClass: 'Action Fantasy', img: 'the-100', title: 'The 100 - Season 6', year: '2019', rate: '7.8'},
+					{link: '#!', mixClass: 'Documentary Drama', img: 'gotham', title: 'Gotham - Season 5', year: '2018', rate: '7.3'},
+					{link: '#!', mixClass: 'Adventure Action', img: 'game', title: 'Game Of Thrones - Season 8', year: '2019', rate: '9.7'},
+					{link: '#!', mixClass: 'Comedy Crime', img: 'ozark', title: 'Ozark - Season 3', year: '2019', rate: '8.6'}
+					])
+		button.button-add.load-more#load-more load more

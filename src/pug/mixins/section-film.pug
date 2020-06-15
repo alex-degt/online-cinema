@@ -1,7 +1,7 @@
-mixin sectionFilm(backgroundImage, trailerLink, alignment, year, genreFirst, genreSecond, title, desc)
+mixin sectionFilm(backgroundImage, fdRow, trailerLink, alignment, year, genreFirst, genreSecond, title, desc)
 	section.section-film(style="background-image: url" + backgroundImage)
 		.container
-			.film-wrapper
+			div(class="film-wrapper " + fdRow)
 				.film__trailer
 					iframe(width='674' height='429' src=' ' + trailerLink frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 				div(class="film__info " + alignment)

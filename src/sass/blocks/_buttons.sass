@@ -1,0 +1,129 @@
+.button-login
+	position: relative
+	margin-right: 32px
+	padding: 0
+	color: #ffffff
+	border: none
+	background-color: transparent
+	&:focus
+		outline: none
+	&:before
+		position: absolute
+		bottom: -5px
+		left: 0
+		width: 0
+		height: 2px
+		content: ""
+		background-color: #eb101f
+	&:hover
+		color: #eb101f
+		&:before
+			width: 100%
+			transition: 0.5s ease
+
+.button-sign
+	display: inline-block
+	height: 42px
+	padding-right: 26px
+	padding-left: 26px
+	color: #ffffff
+	border: none
+	border-radius: 21px
+	outline: none
+	background-color: #f10e1f
+	&:hover
+		background-color: darken(#f10e1f, 10%)
+	&:active
+		background-color: #f10e1f
+	&:focus
+		outline: none
+
+.button-play-trailer
+	position: relative
+	height: 42px
+	margin-right: 25px
+	padding-right: 20px
+	padding-left: 42px
+	text-transform: uppercase
+	color: #ffffff
+	border: none
+	border-radius: 21px
+	outline: none
+	background-color: #fe0f20
+	font-size: 12px
+	&:before
+		position: absolute
+		left: 22px
+		width: 9px
+		height: 12px
+		content: ""
+		background-image: url("../img/icons/play.png")
+		background-repeat: no-repeat
+	&:hover
+		transition: 0.4s ease
+		background-color: darken(#fe0f20, 10%)
+	&:active
+		background-color: #fe0f20
+	
+.button-add
+	position: relative
+	height: 42px
+	padding-right: 22px
+	padding-left: 48px
+	text-transform: uppercase
+	color: #ffffff
+	border: none
+	border-radius: 21px
+	outline: none
+	background-color: #000000
+	font-size: 12px
+	&:before
+		position: absolute
+		left: 22px
+		width: 14px
+		height: 14px
+		content: ""
+		background-image: url("../img/icons/plus.png")
+		background-repeat: no-repeat
+	&:hover
+		transition: 0.4s ease
+		background-color: #fe0f20
+	&:active
+		background-color: darken(#fe0f20, 10%)
+	&:focus
+		outline: none
+
+.slider-one .owl-nav button.owl-next
+	position: absolute
+	top: 50%
+	right: -10%
+	transition: 0.5s ease
+	transform: translateY(-100%)
+	color: #565656
+	font-size: 50px
+	&:hover
+		color: lighten(#565656, 30%)
+	&:active
+		color: #ffffff
+	&:focus
+		outline: none
+	
+.slider-one .owl-nav button.owl-prev
+	position: absolute
+	top: 50%
+	left: -10%
+	transition: 0.5s ease
+	transform: translateY(-100%)
+	color: #565656
+	font-size: 50px
+	&:hover
+		color: lighten(#565656, 30%)
+	&:active
+		color: #ffffff
+	&:focus
+		outline: none
+
+.load-more
+	margin-left: auto
+	margin-right: auto
+	display: block
