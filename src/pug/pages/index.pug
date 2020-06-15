@@ -1,0 +1,10 @@
+extends ./../layouts/main.pug
+
+block variables
+	- const title = "KALLYAS";
+
+block content
+
+	include ../sections/nav.pug
+	include ../sections/header.pug
+	+sectionFilm("('./img/bg-mission-impossible.jpg')", "https://www.youtube.com/embed/wb49-oV0F78", "justify-end", "2018", "ACTION", "ADVENTURE", "MISSION : IMPOSSIBLE", "Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the.")

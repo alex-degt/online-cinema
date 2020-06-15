@@ -4,14 +4,92 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap"/>
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-reboot.min.css"/>
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="libs/fonts/font-awesome/css/all.min.css"/>
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
-    <title>Заголовок страницы</title>
+    <title>KALLYAS</title>
   </head>
   <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav--wrapper">
+          <div class="nav__logo"><a href="#!">KALLYAS</a></div>
+          <ul class="nav__menu">
+            <li class="nav__menu-item"><a href="#!">Homepage</a></li>
+            <li class="nav__menu-item"><a href="#!">Serials</a></li>
+            <li class="nav__menu-item"><a href="#!">Movies</a></li>
+            <li class="nav__menu-item"><a href="#!">Favorites</a></li>
+            <li class="nav__menu-item"><a href="#!">My List</a></li>
+          </ul>
+          <div class="nav__right-side">
+            <form class="search nav__search" action="" method="post">
+              <input class="input nav__search-input" type="search" name="" placeholder="Search..."/>
+              <input class="submit nav__search-submit" type="submit" name="" value=""/>
+            </form>
+            <button class="button-login">Login</button>
+            <button class="button-sign">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header--wrapper">
+          <div class="header-content--wrapper">
+            <div class="header__info">
+              <div class="header__badges">
+                <div class="badges">
+                  <div class="badge--yellow">2012</div>
+                  <div class="badge--blue">ACTION</div>
+                  <div class="badge--orange">ADVENTURE</div>
+                </div>
+              </div>
+              <h2 class="header__title">THE AVENGERS</h2>
+              <div class="header__desc">When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth.</div>
+              <div class="header__buttons">
+                <button class="button-play-trailer">play trailer</button>
+                <button class="button-add">add to list</button>
+              </div>
+            </div>
+            <div class="header__preview"><img src="./img/the-avengers-poster.png" alt="The Avengers"/></div>
+          </div>
+          <div class="header-popular--wrapper">
+            <h4 class="popular__title">POPULAR SERIALS</h4>
+            <div class="owl-carousel carousel__items"><a class="carousel__item" href="#!"><img src="./img/popular-serials/black-list.png" alt="Black List"/></a><a class="carousel__item" href="#!"><img src="./img/popular-serials/gotham.png" alt="Gotham"/></a><a class="carousel__item" href="#!"><img src="./img/popular-serials/lucifer.png" alt="Lucifer"/></a><a class="carousel__item" href="#!"><img src="./img/popular-serials/prison-break.png" alt="Prison Break"/></a><a class="carousel__item" href="#!"><img src="./img/popular-serials/the-100.png" alt="The 100"/></a><a class="carousel__item" href="#!"><img src="./img/popular-serials/avengers.png" alt="avengers"/></a><a class="carousel__item" href="#!"><img src="./img/popular-serials/the-defenders.png" alt="The Defenders"/></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section-film" style="background-image: url('./img/bg-mission-impossible.jpg')">
+      <div class="container">
+        <div class="film-wrapper">
+          <div class="film__trailer">
+            <iframe width="674" height="429" src=" https://www.youtube.com/embed/wb49-oV0F78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+          <div class="film__info justify-end">
+            <div class="film__badges">
+              <div class="badges">
+                <div class="badge--yellow">2018</div>
+                <div class="badge--blue">ACTION</div>
+                <div class="badge--orange">ADVENTURE</div>
+              </div>
+            </div>
+            <h2 class="film__title">MISSION : IMPOSSIBLE</h2>
+            <div class="film__desc">Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the.</div>
+            <div class="film__buttons">
+              <button class="button-play-trailer">play trailer</button>
+              <button class="button-add">add to list</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

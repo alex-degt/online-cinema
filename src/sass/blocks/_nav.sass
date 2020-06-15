@@ -1,0 +1,132 @@
+.nav
+	position: absolute
+	z-index: 5
+	width: 100%
+
+.nav--wrapper
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-top: 34px
+
+.nav__logo
+	position: relative
+	margin-left: 31px
+	text-transform: uppercase
+	color: #eb101f
+	font-size: 14px
+	&:before
+		position: absolute
+		top: -8px
+		left: -31px
+		width: 19px
+		height: 29px
+		content: ""
+		background-image: url("../img/icons/logo.png")
+		background-repeat: no-repeat
+	a
+		color: #eb101f
+
+.nav__menu
+	display: flex
+	flex-direction: row
+	
+.nav__menu-item
+	margin-right: 35px
+	cursor: pointer
+	&:last-child
+		margin-right: 0
+	a
+		position: relative
+		transition: 0.5s ease
+		color: #ffffff
+		font-size: 14px
+		font-weight: 300
+		&:before
+			position: absolute
+			bottom: -3px
+			left: 0
+			width: 0
+			height: 2px
+			content: ""
+			background-color: #eb101f
+		&:hover
+			color: #eb101f
+			&:before
+				width: 100%
+				transition: 0.5s ease
+		&:active
+			color: #fff
+
+.nav__right-side
+	display: flex
+	align-items: center
+
+.nav__search
+	position: relative
+	margin-right: 32px
+
+.nav__search-input
+	width: 175px
+	// padding-top: 5px
+	// padding-bottom: 5px
+	color: #fff
+	border: none
+	border-bottom: 1px solid #f10e1f
+	background-color: transparent
+	font-size: 10px
+	font-weight: 300
+	&::-webkit-input-placeholder
+		color: #f10e1f
+
+.nav__search-submit
+	position: absolute
+	top: 0
+	right: 0
+	width: 11px
+	height: 11px
+	cursor: pointer
+	border: none
+	background: transparent
+	background-image: url("../img/icons/search.png")
+	background-repeat: no-repeat
+
+.button-login
+	position: relative
+	margin-right: 32px
+	padding: 0
+	color: #ffffff
+	border: none
+	background-color: transparent
+	&:focus
+		outline: none
+	&:before
+		position: absolute
+		bottom: -5px
+		left: 0
+		width: 0
+		height: 2px
+		content: ""
+		background-color: #eb101f
+	&:hover
+		color: #eb101f
+		&:before
+			width: 100%
+			transition: 0.5s ease
+
+.button-sign
+	display: inline-block
+	height: 42px
+	padding-right: 26px
+	padding-left: 26px
+	color: #ffffff
+	border: none
+	border-radius: 21px
+	outline: none
+	background-color: #f10e1f
+	&:hover
+		background-color: darken(#f10e1f, 10%)
+	&:active
+		background-color: #f10e1f
+	&:focus
+		outline: none

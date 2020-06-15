@@ -1,0 +1,44 @@
+.section-film
+	position: relative
+	padding: 65px 0
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		content: ""
+		background-color: rgba(0, 0, 0, 0.5)
+
+.film-wrapper
+	position: relative
+	z-index: 2
+	display: flex
+	align-items: center
+	flex-direction: row
+	justify-content: space-between
+
+.film__info
+	display: flex
+	flex-direction: column
+
+.film__badges
+	margin-bottom: 15px
+
+.film__title
+	margin-bottom: 31px
+	text-transform: uppercase
+	color: #ffffff
+	font-size: 36px
+	font-weight: 600
+
+.film__desc
+	max-width: 459px
+	margin-bottom: 49px
+	color: #b0b0b0
+	font-size: 14px
+	font-weight: 300
+	line-height: 18px
