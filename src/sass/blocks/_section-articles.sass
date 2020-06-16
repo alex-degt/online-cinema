@@ -1,0 +1,152 @@
+.section-articles
+	padding-top: 50px
+	padding-bottom: 50px
+	background-color: #020d18
+
+.section-articles--wrapper
+	display: flex
+	margin-bottom: 70px
+
+.article-wrapper
+	width: 75%
+	max-width: 866px
+	border-right: 1px solid #4c4c4c
+
+.article
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.article__img
+	display: inline-block
+	width: 334px
+	height: 500px
+	img
+		max-width: initial
+		height: 100%
+
+.article__content
+	padding: 30px
+
+.article__title
+	margin-bottom: 45px
+	text-transform: uppercase
+	color: #ffffff
+	font-size: 36px
+	font-weight: 600
+
+
+
+.article__text
+	margin-bottom: 30px
+	color: #b0b0b0
+	font-size: 14px
+	font-weight: 300
+	line-height: 23px
+	p
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+.article__button-continue
+	position: relative
+	transition: 0.4s ease
+	color: #ffffff
+	font-size: 14px
+	line-height: 23px
+	&:before
+		position: absolute
+		top: 3px
+		right: -15px
+		width: 7px
+		height: 12px
+		content: ""
+		background-image: url("../img/icons/right-arrow.png")
+	&:hover
+		color: darken(#ffffff, 10%)
+	&:active
+		color: #ffffff
+
+.article__aside
+	display: flex
+	align-items: center
+	max-width: 250px
+	margin-bottom: 35px
+	&:last-child
+		margin-bottom: 0
+// .articles__aside-wrapper
+
+.aside__img
+	flex-shrink: 0
+	width: 80px
+	height: 80px
+	margin-right: 15px
+	margin-left: 15px
+	img
+		width: 80px
+		height: 80px
+
+.aside__content
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.aside__title
+	margin-bottom: 10px
+	transition: 0.4s ease
+	color: #ffffff
+	font-size: 14px
+	font-weight: 500
+	line-height: 18px
+	&:hover
+		color: #ffecec
+	&:active
+		color: #f10e1f
+
+.aside__link
+	transition: 0.4s ease
+	color: #4c4c4c
+	font-size: 12px
+	font-weight: 300
+	&:hover
+		color: #ffffff
+	&:active
+		color: #f10e1f
+
+.news-wrapper
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+.news-card
+	position: relative
+	display: none
+	width: 263px
+	height: 400px
+	margin-bottom: 30px
+	&:hover
+		transition: 0.3s ease
+		opacity: 0.9
+		.news-card__title
+			text-decoration: underline
+			color: #ffffff
+			background-color: rgba(0, 0, 0, 1)
+	&:active
+		.news-card__title
+			color: #f10e1f
+	
+.news-card__title
+	position: absolute
+	bottom: 0
+	right: 0
+	left: 0
+	display: inline-block
+	width: 100%
+	height: 112px
+	padding: 20px 7px
+	// transform: translateY(-100%)
+	color: #ffffff
+	background-color: rgba(0, 0, 0, 0.7)
+	font-weight: 500
+	line-height: 24px

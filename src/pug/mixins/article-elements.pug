@@ -1,0 +1,13 @@
+mixin articleAsideCard(img, title)
+	.article__aside
+		.aside__img
+			img(src="./img/" + img + ".png", alt= img)
+		.aside__content
+			a(href="#!").aside__title #{title}
+			a(href="#!").aside__link Learn more
+
+mixin newsCard(img, title)
+	.news-card
+		a(href="#!").news-card__img
+			img(src="./img/" + img + ".png", alt= img)
+		a(href="#!").news-card__title #{title}

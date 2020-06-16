@@ -7,6 +7,14 @@ $(document).ready(function () {
 		});
 	});
 
+	$(function () {
+		$(".news-card").slice(0, 4).show();
+		$("#news-more").on("click", function (e) {
+			e.preventDefault();
+			$(".news-card:hidden").slice(0, 4).slideDown();
+		});
+	});
+
 	$(".slider-one").owlCarousel({
 		loop: true,
 		nav: true,
