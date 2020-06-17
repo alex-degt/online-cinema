@@ -96,7 +96,9 @@
 .slider-one .owl-nav button.owl-next
 	position: absolute
 	top: 50%
-	right: -10%
+	display: inline-block
+	width: 10px
+	height: 30px
 	transition: 0.5s ease
 	transform: translateY(-100%)
 	color: #565656
@@ -107,11 +109,20 @@
 		color: #ffffff
 	&:focus
 		outline: none
-	
+	@media (min-width: 1200px)
+		display: none
+	@media (min-width: 1350px)
+		display: block
+		right: -50px
+	@media (min-width: 1500px)
+		right: -10%
+
 .slider-one .owl-nav button.owl-prev
 	position: absolute
 	top: 50%
-	left: -10%
+	display: inline-block
+	width: 10px
+	height: 30px
 	transition: 0.5s ease
 	transform: translateY(-100%)
 	color: #565656
@@ -122,8 +133,15 @@
 		color: #ffffff
 	&:focus
 		outline: none
+	@media (min-width: 1200px)
+		display: none
+	@media (min-width: 1350px)
+		display: block
+		left: -50px
+	@media (min-width: 1500px)
+		left: -10%
 
 .load-more
-	margin-left: auto
-	margin-right: auto
 	display: block
+	margin-right: auto
+	margin-left: auto
