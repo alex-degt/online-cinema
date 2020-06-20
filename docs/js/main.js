@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
 	// Fixed NAV on scroll
 	$(window).scroll(function () {
 		var height = $(window).scrollTop();
@@ -14,11 +13,13 @@ $(document).ready(function () {
 	$("#nav-toggle").on("click", function () {
 		$(".nav__menu").toggleClass("nav__menu--visible");
 		$("body").toggleClass("body-fixed");
+		$("#background").toggleClass("background--active");
 	});
 
 	// Button "Show more" #1
 	$(function () {
-		$(".trends-card").slice(0, 5).show();
+		if (screen.width < 769) $(".trends-card").slice(0, 4).show();
+		else $(".trends-card").slice(0, 10).show();
 		$("#load-more").on("click", function (e) {
 			e.preventDefault();
 			$(".trends-card:hidden").slice(0, 5).slideDown();
@@ -50,11 +51,12 @@ $(document).ready(function () {
 			600: {
 				items: 3,
 			},
+			768: {
+				items: 4,
+			},
 			1000: {
 				items: 5,
 			},
 		},
 	});
-
-
 });

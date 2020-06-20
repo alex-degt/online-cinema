@@ -1,24 +1,31 @@
-.sign-up
-	width: 400px
-	// padding: 30px
-	border: 1px solid #b9b9b9
-	// background-color: #dddcdc
+.blocker
+	z-index: 100
 
+.modal
+	padding: 0
+	border: none
+
+.sign-up
+	z-index: 1000
+	display: none
+	width: 100%
+	border: 1px solid #b9b9b9
 
 .sign-up__header
+	position: relative
 	margin-bottom: 20px
 	padding: 15px
-	border-bottom: 1px solid #000000
 	background-color: #e2e2e2
 
 .sign-up__title
 	text-align: center
 	text-transform: uppercase
-	color: #000000
+	color: #524c4c
 	font-size: 20px
 	font-weight: 400
 
 .sign-up__body
+	margin-bottom: 30px
 	padding: 15px
 
 .sign-up__form
@@ -36,9 +43,19 @@
 	border-radius: 5px
 
 .sign-up__password
-	margin-bottom: 25px
+	margin-bottom: 0
 
 .sign-up__footer
 	display: flex
 	align-items: center
 	justify-content: space-between
+	padding: 15px
+	background-color: #e2e2e2
+	label
+		display: flex
+		align-items: center
+		flex-direction: row-reverse
+
+.sign-up__remember
+	margin-right: 10px
+	background-color: red

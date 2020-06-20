@@ -15,6 +15,25 @@
     <title>KALLYAS</title>
   </head>
   <body>
+    <div class="sign-up" id="sign-up">
+      <div class="sign-up__header">
+        <div class="sign-up__title">Sign UP</div>
+      </div>
+      <div class="sign-up__body">
+        <form class="sign-up__form">
+          <label for="email">Email or Username</label>
+          <input class="sign-up__email" type="email" id="email" placeholder="your@email.com"/>
+          <label for="password">Password</label>
+          <input class="sign-up__password" type="password" id="password" placeholder="Password"/>
+        </form>
+      </div>
+      <div class="sign-up__footer">
+        <label for="#remember">Remember me
+          <input class="sign-up__remember" type="checkbox" id="#remember"/>
+        </label>
+        <button class="button-sign">Sign Up</button>
+      </div>
+    </div>
     <div class="nav-top" id="nav-top">
       <div class="nav-top_wrapper"><a class="nav__logo" href="#!">KALLYAS<img src="./img/icons/logo.png" alt="logo"/></a>
         <nav class="nav__menu">
@@ -448,10 +467,6 @@
               <div class="aside__img"><img src="./img/backstage-prev.png" alt="backstage-prev"/></div>
               <div class="aside__content"><a class="aside__title" href="#!">See what actors do during the movie in backstage.</a><a class="aside__link" href="#!">Learn more</a></div>
             </div>
-            <div class="article__aside">
-              <div class="aside__img"><img src="./img/hunter-game-prev.png" alt="hunter-game-prev"/></div>
-              <div class="aside__content"><a class="aside__title" href="#!">How much cost to do a movie like Hunger Games.</a><a class="aside__link" href="#!">Learn more</a></div>
-            </div>
           </div>
         </div>
         <div class="news-wrapper">
@@ -546,6 +561,7 @@
         </div>
       </div>
     </footer>
+    <div class="background" id="background"></div>
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
     <script src="libs/mixitup/mixitup.min.js"></script>

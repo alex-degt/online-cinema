@@ -19,8 +19,9 @@ html, body
 .body-fixed
 	overflow: hidden
 
-// ::selection
-// 	background-color: green - цвет выбираемого текста на странице
+::selection
+	color: #ffffff
+	background-color: #f3727a
 
 a, a:hover
 	text-decoration: none
@@ -61,3 +62,19 @@ button
 
 
 
+.background
+	position: absolute
+	z-index: 2
+	top: 0
+	left: 0
+	display: none
+	width: 100%
+	height: 100%
+	transition: 0.5s
+	background-color: rgba(0, 0, 0, 0.3)
+	
+
+.background--active
+	position: fixed
+	display: block
+	transition: 0.5s

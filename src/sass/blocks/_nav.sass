@@ -62,7 +62,10 @@
 	padding-top: 80px
 	transition: .5s
 	background-color: rgba(0, 0, 0, 0.5)
+	@media (min-width: 768px)
+		max-width: 320px
 	@media (min-width: 1200px)
+		max-width: 100%
 		position: relative
 		right: 0
 		align-items: center
@@ -70,9 +73,7 @@
 		justify-content: space-between
 		width: auto
 		height: auto
-		// height: 55px
 		padding: 0
-		// padding-top: 10px
 		background-color: transparent
 	
 .nav__menu--visible
@@ -80,6 +81,7 @@
 	right: 0
 	overflow-y: hidden
 	transition: .5s
+	border-left: 1px solid rgba(235, 16, 31, 0.4)
 
 
 .nav__items
