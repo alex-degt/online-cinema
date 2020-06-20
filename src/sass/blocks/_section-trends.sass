@@ -7,7 +7,6 @@
 	justify-content: center
 	margin-bottom: 50px
 
-
 .trends__title
 	margin-bottom: 25px
 	text-transform: uppercase
@@ -15,60 +14,38 @@
 	font-size: 14px
 	font-weight: 300
 
-.trends__filters
-	max-width: 950px
-	margin-right: auto
-	margin-bottom: 55px
-	margin-left: auto
-	position: relative
-	height: 30px
-
-.trends__filter
-	height: 26px
-	padding: 0 14px
-	color: #ffffff
-	border: none
-	border-radius: 13px
-	outline: none
-	background-color: #15202b
-	font-size: 12px
-	&:last-child
-		margin-right: 0
-	&:hover
-		transition: 0.4s ease
-		background-color: #fe0f20
-
-.trends__filter--active
-	background-color: #fe0f20
 
 .trends-card--wrapper
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
+	justify-content: center
+	@media (min-width: 1200px)
+		justify-content: space-between
 
 .trends-card
 	display: none
-	width: 222px
-	margin-right: 15px
-	margin-bottom: 60px
-	&:nth-child(5n)
-		margin-right: 0
+	width: 100%
+	max-width: 350px
+	margin-bottom: 30px
 	&:hover
 		.trends-card__img
 			&:before
 				transition: 0.4s ease
 				background-color: rgba(0, 0, 0, 0)
+	@media (min-width: 1200px)
+		width: 222px
+		margin-right: 15px
+		&:nth-child(5n)
+			margin-right: 0
 
 .trends-card__img
 	position: relative
 	display: block
-	width: 222px
-	height: 197px
 	margin-bottom: 25px
 	img
 		width: 100%
 		height: 100%
-
 		object-fit: cover
 	&:before
 		position: absolute
@@ -78,6 +55,9 @@
 		left: 0
 		content: ""
 		background-color: rgba(0, 0, 0, 0.4)
+	@media (min-width: 1200px)
+		width: 222px
+		height: 197px
 
 
 .trends-card__title

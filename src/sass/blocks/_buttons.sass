@@ -1,10 +1,14 @@
 .button-login
 	position: relative
-	margin-right: 32px
+	margin-right: auto
+	margin-bottom: 30px
+	margin-left: auto
 	padding: 0
+	text-align: center
 	color: #ffffff
 	border: none
 	background-color: transparent
+	font-size: 18px
 	&:focus
 		outline: none
 	&:before
@@ -20,10 +24,16 @@
 		&:before
 			width: 100%
 			transition: 0.5s ease
+	@media (min-width: 1200px)
+		margin: 0
+		margin-right: 32px
+		font-size: 14px
 
 .button-sign
 	display: inline-block
 	height: 42px
+	margin-right: auto
+	margin-left: auto
 	padding-right: 26px
 	padding-left: 26px
 	color: #ffffff
@@ -31,17 +41,27 @@
 	border-radius: 21px
 	outline: none
 	background-color: #f10e1f
+	font-size: 18px
+	line-height: 42px
 	&:hover
+		color: #fff
 		background-color: darken(#f10e1f, 10%)
 	&:active
 		background-color: #f10e1f
 	&:focus
 		outline: none
+	@media (min-width: 1200px)
+		margin: 0
+		font-size: 14px
 
 .button-play-trailer
 	position: relative
+	max-width: 290px
 	height: 42px
-	margin-right: 25px
+	margin-left: 5px
+	margin-right: 5px
+	// margin-right: 15px
+	// margin-bottom: 15px
 	padding-right: 20px
 	padding-left: 42px
 	text-transform: uppercase
@@ -64,10 +84,16 @@
 		background-color: darken(#fe0f20, 10%)
 	&:active
 		background-color: #fe0f20
+	@media (min-width: 1200px)
+		margin-right: 25px
+		margin-bottom: 0
 	
 .button-add
 	position: relative
+	max-width: 290px
 	height: 42px
+	margin-left: 5px
+	margin-right: 5px
 	padding-right: 22px
 	padding-left: 48px
 	text-transform: uppercase
@@ -95,8 +121,8 @@
 
 .slider-one .owl-nav button.owl-next
 	position: absolute
+	display: none
 	top: 50%
-	display: inline-block
 	width: 10px
 	height: 30px
 	transition: 0.5s ease
@@ -109,18 +135,16 @@
 		color: #ffffff
 	&:focus
 		outline: none
-	@media (min-width: 1200px)
-		display: none
 	@media (min-width: 1350px)
-		display: block
 		right: -50px
+		display: block
 	@media (min-width: 1500px)
 		right: -10%
 
 .slider-one .owl-nav button.owl-prev
 	position: absolute
 	top: 50%
-	display: inline-block
+	display: none
 	width: 10px
 	height: 30px
 	transition: 0.5s ease
@@ -133,11 +157,9 @@
 		color: #ffffff
 	&:focus
 		outline: none
-	@media (min-width: 1200px)
-		display: none
 	@media (min-width: 1350px)
-		display: block
 		left: -50px
+		display: block
 	@media (min-width: 1500px)
 		left: -10%
 
@@ -145,3 +167,57 @@
 	display: block
 	margin-right: auto
 	margin-left: auto
+
+
+
+
+.nav-toggle
+	position: absolute
+	top: 7px
+	right: 15px
+	overflow: hidden
+	width: 50px
+	height: 42px
+	margin: 0
+	z-index: 100
+	.nav-toggle__checkbox:checked ~ .nav-toggle__label
+		.nav-toggle__top
+			top: 18px
+			transform: rotate(45deg)
+		.nav-toggle__center
+			left: -100%
+		.nav-toggle__bottom
+			top: 18px
+			transform: rotate(-45deg)
+	@media (min-width: 1200px)
+		display: none
+
+.nav-toggle__label
+	display: block
+	width: 50px
+	height: 42px
+	cursor: pointer
+	transition: all 0.4s
+
+.nav-toggle__checkbox
+	display: none
+
+.nav-toggle__line
+	position: absolute
+	left: 0
+	display: block
+	width: 100%
+	height: 6px
+	transition: all 0.4s
+	pointer-events: none
+	border-radius: 10px
+	background-color: #eb101f
+
+.nav-toggle__top
+	top: 4px
+
+.nav-toggle__center
+	top: 18px
+
+.nav-toggle__bottom
+	top: 32px

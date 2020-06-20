@@ -1,7 +1,10 @@
 .footer
-	padding-top: 60px
-	padding-bottom: 50px
 	background-color: #000b15
+	padding: 30px 0
+	@media (min-width: 1200px)
+		padding-top: 60px
+		padding-bottom: 50px
+
 
 .footer-wrapper
 	display: flex
@@ -9,12 +12,17 @@
 	justify-content: space-between
 
 .footer-desc
-	max-width: 250px
+	max-width: 350px
+	@media (min-width: 1200px)
+		max-width: 250px
 
 .footer__logo
 	display: flex
 	align-items: center
+	justify-content: center
 	margin-bottom: 30px
+	@media (min-width: 1200px)
+		justify-content: flex-start
 
 .footer__logo-img
 	width: 37px
@@ -35,14 +43,20 @@
 	font-size: 14px
 	font-weight: 300
 	line-height: 20px
+	text-align: center
+	@media (min-width: 1200px)
+		text-align: left
 
 
 .footer__partners
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
+	justify-content: center
 	margin-bottom: 50px
-
+	@media (min-width: 1200px)
+		justify-content: flex-start
+	
 .footer__partners-title
 	width: 100%
 	margin-bottom: 15px
@@ -50,6 +64,9 @@
 	font-size: 14px
 	font-weight: 300
 	line-height: 22px
+	text-align: center
+	@media (min-width: 1200px)
+		text-align: left
 
 .footer__partners-item
 	position: relative
@@ -81,6 +98,9 @@
 	display: flex
 	align-items: center
 	flex-direction: row
+	justify-content: center
+	@media (min-width: 1200px)
+		justify-content: flex-start
 
 .footer__socials-link
 	margin-right: 15px
@@ -117,10 +137,12 @@
 
 
 .footer-nav
-	display: flex
-	flex-direction: row
-	flex-wrap: no-wrap
-	justify-content: space-between
+	display: none
+	@media (min-width: 1200px)
+		display: flex
+		flex-direction: row
+		flex-wrap: no-wrap
+		justify-content: space-between
 
 
 .footer-nav__movies
@@ -158,3 +180,4 @@
 		color: #ffffff
 	&:active
 		text-decoration: underline
+

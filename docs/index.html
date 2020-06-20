@@ -10,32 +10,32 @@
     <link rel="stylesheet" href="libs/fonts/font-awesome/css/all.min.css"/>
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <title>KALLYAS</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="container">
-        <div class="nav--wrapper">
-          <div class="nav__logo"><a href="#!">KALLYAS</a></div>
-          <ul class="nav__menu">
+    <div class="nav-top" id="nav-top">
+      <div class="nav-top_wrapper"><a class="nav__logo" href="#!">KALLYAS<img src="./img/icons/logo.png" alt="logo"/></a>
+        <nav class="nav__menu">
+          <ul class="nav__items">
             <li class="nav__menu-item"><a href="#!">Homepage</a></li>
             <li class="nav__menu-item"><a href="#!">Serials</a></li>
             <li class="nav__menu-item"><a href="#!">Movies</a></li>
             <li class="nav__menu-item"><a href="#!">Favorites</a></li>
             <li class="nav__menu-item"><a href="#!">My List</a></li>
           </ul>
-          <div class="nav__right-side">
-            <form class="search nav__search" action="" method="post">
-              <input class="input nav__search-input" type="search" name="" placeholder="Search..."/>
-              <input class="submit nav__search-submit" type="submit" name="" value=""/>
-            </form>
-            <button class="button-login">Login</button>
-            <button class="button-sign">Sign Up</button>
-          </div>
-        </div>
+          <form class="search nav__search" action="" method="post">
+            <input class="input nav__search-input" type="search" name="" placeholder="Search..."/>
+            <input class="submit nav__search-submit" type="submit" name="" value=""/>
+          </form><a class="button-login" href="#login" rel="modal:open">Login</a><a class="button-sign" href="#sign-up" rel="modal:open">Sign Up</a>
+        </nav>
       </div>
-    </nav>
+      <div class="nav-toggle">
+        <input class="nav-toggle__checkbox" type="checkbox" id="burger1"/>
+        <label class="nav-toggle__label" for="burger1" id="nav-toggle"><span class="nav-toggle__line nav-toggle__top"></span><span class="nav-toggle__line nav-toggle__center"></span><span class="nav-toggle__line nav-toggle__bottom"></span></label>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header--wrapper">
@@ -66,11 +66,11 @@
     </header>
     <section class="section-film" style="background-image: url('./img/bg-mission-impossible.jpg')">
       <div class="container">
-        <div class="film-wrapper fd-row">
+        <div class="film-wrapper--right">
           <div class="film__trailer">
-            <iframe width="674" height="429" src=" https://www.youtube.com/embed/wb49-oV0F78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe src=" https://www.youtube.com/embed/wb49-oV0F78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
-          <div class="film__info justify-end">
+          <div class="film__info--right">
             <div class="film__badges">
               <div class="badges">
                 <div class="badge--yellow">2018</div>
@@ -78,7 +78,7 @@
                 <div class="badge--orange">ADVENTURE</div>
               </div>
             </div>
-            <h2 class="film__title">MISSION : IMPOSSIBLE</h2>
+            <h2 class="film__title">MISSION: IMPOSSIBLE</h2>
             <div class="film__desc">Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the.</div>
             <div class="film__buttons">
               <button class="button-play-trailer">play trailer</button>
@@ -92,21 +92,6 @@
       <div class="container"><a class="adv" href="#!"><img src="./img/970x90.png" alt="adv"/></a>
         <div class="trends--wrapper">
           <h4 class="trends__title">TRENDS NOW</h4>
-          <nav class="trends__filters">
-            <div class="owl-carousel slider-two">
-              <button class="trends__filter filter" data-filter="all">All</button>
-              <button class="trends__filter filter" data-filter=".Adventure">Adventure</button>
-              <button class="trends__filter filter" data-filter=".Action">Action</button>
-              <button class="trends__filter filter" data-filter=".Animation">Animation</button>
-              <button class="trends__filter filter" data-filter=".Biography">Biography</button>
-              <button class="trends__filter filter" data-filter=".Crime">Crime</button>
-              <button class="trends__filter filter" data-filter=".Comedy">Comedy</button>
-              <button class="trends__filter filter" data-filter=".Drama">Drama</button>
-              <button class="trends__filter filter" data-filter=".Documentary">Documentary</button>
-              <button class="trends__filter filter" data-filter=".Fantasy">Fantasy</button>
-              <button class="trends__filter filter" data-filter=".Horror">Horror</button>
-            </div>
-          </nav>
           <div class="trends-card--wrapper" id="trends-card--wrapper">
             <div class="trends-card mix Adventure Action Biography"><a class="trends-card__img" href="#!"><img src="./img/popular-serials/lucifer.jpg" alt="lucifer"/></a><a class="trends-card__title" href="#!">Lucifer - Prime Exclusive</a>
               <div class="trends-card__footer">
@@ -385,11 +370,11 @@
     </section>
     <section class="section-film" style="background-image: url('./img/jwf.jpg')">
       <div class="container">
-        <div class="film-wrapper fd-row-reverse">
+        <div class="film-wrapper--left">
           <div class="film__trailer">
-            <iframe width="674" height="429" src=" https://www.youtube.com/embed/vn9mMeWcgoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe src=" https://www.youtube.com/embed/vn9mMeWcgoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
-          <div class="film__info justify-start">
+          <div class="film__info--left">
             <div class="film__badges">
               <div class="badges">
                 <div class="badge--yellow">2018</div>
@@ -397,7 +382,7 @@
                 <div class="badge--orange">ADVENTURE</div>
               </div>
             </div>
-            <h2 class="film__title">JURASSIC WORLD : FALLEN KINGDOM</h2>
+            <h2 class="film__title">JURASSIC WORLD: FALLEN KINGDOM</h2>
             <div class="film__desc">Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic.</div>
             <div class="film__buttons">
               <button class="button-play-trailer">play trailer</button>
@@ -409,11 +394,11 @@
     </section>
     <section class="section-film" style="background-image: url('./img/venom.png')">
       <div class="container">
-        <div class="film-wrapper fd-row">
+        <div class="film-wrapper--right">
           <div class="film__trailer">
-            <iframe width="674" height="429" src=" https://www.youtube.com/embed/xLCn88bfW1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe src=" https://www.youtube.com/embed/xLCn88bfW1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
-          <div class="film__info justify-end">
+          <div class="film__info--right">
             <div class="film__badges">
               <div class="badges">
                 <div class="badge--yellow">2018</div>
@@ -438,7 +423,7 @@
             <article class="article">
               <div class="article__img"><img src="./img/hunter-games-poster.png" alt="hunter games poster"/></div>
               <div class="article__content">
-                <div class="article__title">THE HUNGER GAMES : CATCHING FIRE</div>
+                <div class="article__title">THE HUNGER GAMES: CATCHING FIRE</div>
                 <div class="article__text">
                   <p>After arriving safely home from their unprecedented victory in the 74th Annual Hunger Games, Katniss Everdeen (Jennifer Lawrence) and Peeta Mellark (Josh Hutcherson) discover that they must do a quick turnaround and begin a Victors Tour. As she and Peeta travel throughout the districts, Katniss senses a rebellion is stirring.</p>
                   <p>However, President Snow (Donald Sutherland) proves that he is still very much in control when word comes of a cruel change in the rules for the upcoming 75th Hunger Games.</p>
@@ -564,6 +549,7 @@
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
     <script src="libs/mixitup/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,22 @@
 $(document).ready(function () {
+
+	// Fixed NAV on scroll
+	$(window).scroll(function () {
+		var height = $(window).scrollTop();
+		if (height > 750) {
+			$("#nav-top").addClass("nav-top--fixed");
+		} else {
+			$("#nav-top").removeClass("nav-top--fixed");
+		}
+	});
+
+	// Mobile NAV visible on click
+	$("#nav-toggle").on("click", function () {
+		$(".nav__menu").toggleClass("nav__menu--visible");
+		$("body").toggleClass("body-fixed");
+	});
+
+	// Button "Show more" #1
 	$(function () {
 		$(".trends-card").slice(0, 5).show();
 		$("#load-more").on("click", function (e) {
@@ -7,6 +25,7 @@ $(document).ready(function () {
 		});
 	});
 
+	// Button "Show more" #2
 	$(function () {
 		$(".news-card").slice(0, 4).show();
 		$("#news-more").on("click", function (e) {
@@ -15,6 +34,7 @@ $(document).ready(function () {
 		});
 	});
 
+	// OwlCarousel #1
 	$(".slider-one").owlCarousel({
 		loop: true,
 		nav: true,
@@ -25,7 +45,7 @@ $(document).ready(function () {
 		autoplayHoverPause: true,
 		responsive: {
 			0: {
-				items: 1,
+				items: 2,
 			},
 			600: {
 				items: 3,
@@ -36,28 +56,5 @@ $(document).ready(function () {
 		},
 	});
 
-	$(".slider-two").owlCarousel({
-		loop: true,
-		nav: true,
-		dots: false,
-		margin: 30,
-		responsive: {
-			0: {
-				items: 1,
-			},
-			600: {
-				items: 5,
-			},
-			1000: {
-				items: 8,
-			},
-		},
-	});
 
-	$("#trends-card--wrapper").mixItUp();
-
-	$(".trends__filter").click(function () {
-		$(".trends__filter").not(this).removeClass("trends__filter--active");
-		$(this).toggleClass("trends__filter--active");
-	});
 });

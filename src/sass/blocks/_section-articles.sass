@@ -5,48 +5,73 @@
 
 .section-articles--wrapper
 	display: flex
+	flex-direction: column
 	margin-bottom: 70px
+	@media (min-width: 1200px)
+		flex-direction: row
 
 .article-wrapper
-	width: 75%
-	max-width: 866px
-	border-right: 1px solid #4c4c4c
+	display: flex
+	flex-direction: column
+	margin-bottom: 30px
+	@media (min-width: 1200px)
+		margin: 0
+		width: 75%
+		max-width: 866px
+		border-right: 1px solid #4c4c4c
 
 .article
 	display: flex
-	align-items: center
-	justify-content: space-between
+	flex-direction: column
+	@media (min-width: 1200px)
+		align-items: center
+		flex-direction: row
+		justify-content: space-between
 
 .article__img
 	display: inline-block
-	width: 334px
-	height: 500px
-	img
-		max-width: initial
-		height: 100%
+	width: 100%
+	max-width: 350px
+	margin-bottom: 30px
+	@media (min-width: 1200px)
+		width: 334px
+		max-width: 100%
+		height: 500px
+		margin: 0
+		img
+			max-width: initial
+			height: 100%
 
 .article__content
-	padding: 30px
+	@media (min-width: 1200px)
+		padding: 30px
 
 .article__title
-	margin-bottom: 45px
+	margin-bottom: 30px
 	text-transform: uppercase
 	color: #ffffff
-	font-size: 36px
+	font-size: 29px
 	font-weight: 600
-
+	@media (min-width: 1200px)
+		margin-bottom: 45px
+		font-size: 36px
 
 
 .article__text
-	margin-bottom: 30px
+	margin-bottom: 20px
 	color: #b0b0b0
 	font-size: 14px
 	font-weight: 300
 	line-height: 23px
 	p
-		margin-bottom: 30px
+		margin-bottom: 10px
 		&:last-child
 			margin-bottom: 0
+	@media (min-width: 1200px)
+		margin-bottom: 30px
+		p
+			margin-bottom: 30px
+
 
 .article__button-continue
 	position: relative
@@ -67,13 +92,18 @@
 	&:active
 		color: #ffffff
 
+
+
 .article__aside
 	display: flex
 	align-items: center
-	max-width: 250px
+	max-width: 350px
 	margin-bottom: 35px
 	&:last-child
 		margin-bottom: 0
+	@media (min-width: 1200px)
+		max-width: 250px
+
 // .articles__aside-wrapper
 
 .aside__img
@@ -81,10 +111,11 @@
 	width: 80px
 	height: 80px
 	margin-right: 15px
-	margin-left: 15px
 	img
 		width: 80px
 		height: 80px
+	@media (min-width: 1200px)
+		margin-left: 15px
 
 .aside__content
 	display: flex
@@ -118,13 +149,16 @@
 	flex-direction: row
 	flex-wrap: wrap
 	justify-content: space-between
+	
 
 .news-card
 	position: relative
 	display: none
-	width: 263px
-	height: 400px
+	width: 100%
+	max-width: 350px
 	margin-bottom: 30px
+	img
+		width: 100%
 	&:hover
 		transition: 0.3s ease
 		opacity: 0.9
@@ -135,17 +169,19 @@
 	&:active
 		.news-card__title
 			color: #f10e1f
+	@media (min-width: 1200px)
+		width: 263px
+		height: 400px
 	
 .news-card__title
 	position: absolute
-	bottom: 0
 	right: 0
+	bottom: 0
 	left: 0
 	display: inline-block
 	width: 100%
 	height: 112px
 	padding: 20px 7px
-	// transform: translateY(-100%)
 	color: #ffffff
 	background-color: rgba(0, 0, 0, 0.7)
 	font-weight: 500

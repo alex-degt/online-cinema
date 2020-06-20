@@ -1,6 +1,6 @@
 .header
 	position: relative
-	height: 935px
+	// height: 100%
 	background-image: url("../img/bg-header.jpg")
 	background-repeat: no-repeat
 	background-size: cover
@@ -13,6 +13,8 @@
 		left: 0
 		content: ""
 		background-color: rgba(10, 21, 33, 0.9)
+	@media (min-width: 1200px)
+		height: 935px
 
 .header--wrapper
 	position: relative
@@ -20,45 +22,72 @@
 	display: flex
 	flex-direction: column
 	justify-content: flex-end
-	height: 935px
-	padding-bottom: 25px
+	@media (min-width: 1200px)
+		height: 935px
+		padding-bottom: 25px
 
 .header-content--wrapper
 	display: flex
-	align-items: center
-	justify-content: space-between
-	margin-bottom: 44px
+	flex-direction: column
+	margin-top: 80px
+	@media (min-width: 1200px)
+		align-items: center
+		flex-direction: row
+		justify-content: space-between
+		margin-top: 0
+		margin-bottom: 44px
+
 
 .header__info
 	display: flex
 	flex-direction: column
-	width: 50%
-	margin-top: 28px
+	@media (min-width: 1200px)
+		width: 50%
+		margin-top: 28px
 
 .header__preview
-	width: 334px
-	height: 495px
+	order: -1
+	max-width: 334px
 	margin-right: auto
+	margin-bottom: 20px
 	margin-left: auto
-	box-shadow: 17px 29px 54px rgba(0, 0, 0, 0.48)
+	@media (min-width: 1200px)
+		width: 334px
+		height: 495px
+		margin-bottom: 0
+		box-shadow: 17px 29px 54px rgba(0, 0, 0, 0.48)
 
 .header__badges
-	margin-bottom: 15px
+	margin-bottom: 20px
+	@media (min-width: 1200px)
+		margin-bottom: 15px
 
 .header__title
-	margin-bottom: 31px
+	margin-bottom: 25px
 	text-transform: uppercase
 	color: #ffffff
-	font-size: 60px
+	font-size: 40px
 	font-weight: 600
+	@media (min-width: 1200px)
+		margin-bottom: 31px
+		font-size: 60px
 
 .header__desc
 	max-width: 465px
-	margin-bottom: 49px
+	margin-bottom: 25px
 	color: #b0b0b0
 	font-size: 14px
 	font-weight: 300
 	line-height: 23px
+	@media (min-width: 1200px)
+		margin-bottom: 49px
+
+.header__buttons
+	display: flex
+	margin-bottom: 30px
+	@media (min-width: 1200px)
+		flex-direction: row
+		margin-bottom: 0
 
 .header-popular
 	position: relative
@@ -77,8 +106,8 @@
 .carousel__item
 	position: relative
 	display: inline-block
-	width: 222px
-	height: 196px
+	width: 165px
+	height: 145px
 	&:before
 		position: absolute
 		width: 100%
@@ -91,3 +120,7 @@
 			background-color: rgba(0, 0, 0, 0)
 	&:active
 		transform: translateY(-5px)
+	@media (min-width: 1200px)
+		width: 222px
+		height: 196px
+
