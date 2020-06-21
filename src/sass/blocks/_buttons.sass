@@ -56,10 +56,12 @@
 
 .button-play-trailer
 	position: relative
+	display: flex
+	align-items: center
 	max-width: 290px
 	height: 42px
-	margin-left: 5px
 	margin-right: 5px
+	margin-left: 5px
 	padding-right: 20px
 	padding-left: 42px
 	text-transform: uppercase
@@ -71,27 +73,107 @@
 	font-size: 12px
 	&:before
 		position: absolute
+		top: 15px
 		left: 22px
 		width: 9px
 		height: 12px
 		content: ""
+		color: #ffffff
 		background-image: url("../img/icons/play.png")
 		background-repeat: no-repeat
 	&:hover
 		transition: 0.4s ease
+		color: #ffffff
 		background-color: darken(#fe0f20, 10%)
 	&:active
 		background-color: #fe0f20
 	@media (min-width: 1200px)
 		margin-right: 25px
 		margin-bottom: 0
+
+.button-film-info
+	position: relative
+	display: none
+	max-width: 290px
+	height: 42px
+	margin-right: 5px
+	margin-left: 5px
+	padding-right: 20px
+	padding-left: 42px
+	text-transform: uppercase
+	color: #ffffff
+	border: none
+	border-radius: 21px
+	outline: none
+	background-color: #fe0f20
+	font-size: 12px
+	line-height: 42px
+	&:before
+		position: absolute
+		top: 15px
+		left: 22px
+		width: 9px
+		height: 12px
+		content: ""
+		color: #ffffff
+		background-image: url("../img/icons/info-solid.svg")
+		background-repeat: no-repeat
+	&:hover
+		transition: 0.4s ease
+		color: #ffffff
+		background-color: darken(#fe0f20, 10%)
+	&:active
+		background-color: #fe0f20
+	@media (min-width: 768px)
+		display: inline-block
+	@media (min-width: 1200px)
+		margin-right: 25px
+		margin-bottom: 0
+
+.button-film-info--mobile
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	max-width: 290px
+	height: 42px
+	margin-right: 5px
+	margin-left: 5px
+	padding-right: 20px
+	padding-left: 42px
+	text-transform: uppercase
+	color: #ffffff
+	border: none
+	border-radius: 21px
+	outline: none
+	background-color: #fe0f20
+	font-size: 12px
+	&:before
+		position: absolute
+		top: 15px
+		left: 22px
+		width: 9px
+		height: 12px
+		content: ""
+		color: #ffffff
+		background-image: url("../img/icons/info-solid.svg")
+		background-repeat: no-repeat
+	&:hover
+		transition: 0.4s ease
+		color: #ffffff
+		background-color: darken(#fe0f20, 10%)
+	&:active
+		background-color: #fe0f20
+	@media (min-width: 768px)
+		display: none
+
 	
 .button-add
 	position: relative
 	max-width: 290px
 	height: 42px
-	margin-left: 5px
 	margin-right: 5px
+	margin-left: 5px
 	padding-right: 22px
 	padding-left: 48px
 	text-transform: uppercase
@@ -119,8 +201,8 @@
 
 .slider-one .owl-nav button.owl-next
 	position: absolute
-	display: none
 	top: 50%
+	display: none
 	width: 10px
 	height: 30px
 	transition: 0.5s ease
@@ -169,13 +251,13 @@
 
 .nav-toggle
 	position: absolute
+	z-index: 100
 	top: 7px
 	right: 15px
 	overflow: hidden
 	width: 50px
 	height: 42px
 	margin: 0
-	z-index: 100
 	.nav-toggle__checkbox:checked ~ .nav-toggle__label
 		.nav-toggle__top
 			top: 18px

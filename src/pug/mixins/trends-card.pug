@@ -1,9 +1,9 @@
 mixin trendsCard(objData)
 	each item in objData
-		div(class="trends-card mix " + item.mixClass)
-			a(href="" + item.link).trends-card__img
+		div(class="trends-card " + item.mixClass)
+			a(href="movie-page.html" + item.link).trends-card__img
 				img(src="./img/popular-serials/" + item.img + ".jpg" , alt="" + item.img)
-			a(href="#!").trends-card__title #{item.title}
+			a(href="movie-page.html").trends-card__title #{item.title}
 			.trends-card__footer
 				.trends-card__year #{item.year}
 				.trends-card__assessment

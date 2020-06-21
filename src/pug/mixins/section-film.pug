@@ -15,7 +15,8 @@ mixin sectionFilmRight(backgroundImage, trailerLink, year, genreFirst, genreSeco
 					.film__desc
 						| #{desc}
 					.film__buttons
-						button.button-play-trailer play trailer
+						a(href="movie-page.html").button-film-info about the movie
+						a(href="movie-page.html").button-film-info--mobile about
 						button.button-add add to list
 
 mixin sectionFilmLeft(backgroundImage, trailerLink, year, genreFirst, genreSecond, title, desc)
@@ -34,5 +35,6 @@ mixin sectionFilmLeft(backgroundImage, trailerLink, year, genreFirst, genreSecon
 					.film__desc
 						| #{desc}
 					.film__buttons
-						button.button-play-trailer play trailer
+						a(href="movie-page.html").button-film-info about the movie
+						a(href="movie-page.html").button-film-info--mobile about
 						button.button-add add to list

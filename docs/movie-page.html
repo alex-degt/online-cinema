@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap"/>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="libs/fonts/font-awesome/css/all.min.css"/>
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>The Dark Knight - KALLYAS</title>
+  </head>
+  <body>
+    <div class="nav-top" id="nav-top">
+      <div class="nav-top_wrapper"><a class="nav__logo" href="#!">KALLYAS<img src="./img/icons/logo.png" alt="logo"/></a>
+        <nav class="nav__menu">
+          <ul class="nav__items">
+            <li class="nav__menu-item"><a href="#!">Homepage</a></li>
+            <li class="nav__menu-item"><a href="movie-page.html">Serials</a></li>
+            <li class="nav__menu-item"><a href="#!">Movies</a></li>
+            <li class="nav__menu-item"><a href="#!">Favorites</a></li>
+            <li class="nav__menu-item"><a href="#!">My List</a></li>
+          </ul>
+          <form class="search nav__search" action="" method="post">
+            <input class="input nav__search-input" type="search" name="" placeholder="Search..."/>
+            <input class="submit nav__search-submit" type="submit" name="" value=""/>
+          </form><a class="button-login" href="#login" rel="modal:open">Login</a><a class="button-sign" href="#sign-up" rel="modal:open">Sign Up</a>
+        </nav>
+      </div>
+      <div class="nav-toggle">
+        <input class="nav-toggle__checkbox" type="checkbox" id="burger1"/>
+        <label class="nav-toggle__label" for="burger1" id="nav-toggle"><span class="nav-toggle__line nav-toggle__top"></span><span class="nav-toggle__line nav-toggle__center"></span><span class="nav-toggle__line nav-toggle__bottom"></span></label>
+      </div>
+    </div>
+    <section class="movie">
+      <div class="container">
+        <div class="movie-header">
+          <div class="movie__img"><img src="./img/movie-page/poster.png" alt="The Dark Knight"/></div>
+          <div class="movie__info">
+            <h3 class="movie__title">THE DARK KNIGHT</h3>
+            <ul class="movie__desc">
+              <li class="movie__desc-item">Directed by: Christopher Nolan</li>
+              <li class="movie__desc-item">Release date:<span class="movie__desc-item--blue">July 18, 2008 (United States)</span></li>
+              <li class="movie__desc-item">Length: <span class="movie__desc-item--blue">2h 32m</span></li>
+              <li class="movie__desc-item">Category: Action, Comics, Adventure</li>
+            </ul>
+            <div class="movie__text">
+              <p>With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.</p>
+              <p>Coleman Reese, an accountant at Wayne Enterprises, deduces that Bruce is Batman and threatens to publicize the information. Not wanting Reese's revelation to interfere with his plans, the Joker threatens to destroy a hospital unless Reese is killed within an hour.</p>
+            </div>
+          </div>
+          <div class="movie__rating">
+            <button class="button-add">add to list</button>
+            <div class="movie__stars">(96%)<img src="./img/icons/star.png" alt="star"/><img src="./img/icons/star.png" alt="star"/><img src="./img/icons/star.png" alt="star"/><img src="./img/icons/star.png" alt="star"/><img src="./img/icons/star.png" alt="star"/></div>
+          </div>
+        </div>
+        <div class="movie-body">
+          <div class="movie__news">
+            <div class="article__aside">
+              <div class="aside__img"><img src="./img/movie-page/news-1.png" alt="movie-page/news-1"/></div>
+              <div class="aside__content"><a class="aside__title" href="#!">The 10 Best Gifts For Fans Of The Dark Knight Trilogy.</a><a class="aside__link" href="#!">Learn more</a></div>
+            </div>
+            <div class="article__aside">
+              <div class="aside__img"><img src="./img/movie-page/news-2.png" alt="movie-page/news-2"/></div>
+              <div class="aside__content"><a class="aside__title" href="#!">10 Most Memorable Quotes From The Dark Knight Trilogy.</a><a class="aside__link" href="#!">Learn more</a></div>
+            </div>
+            <div class="article__aside">
+              <div class="aside__img"><img src="./img/movie-page/news-3.png" alt="movie-page/news-3"/></div>
+              <div class="aside__content"><a class="aside__title" href="#!">Captain Marvel' Passes 'The Dark Knight' at the Worldwide Box Office.</a><a class="aside__link" href="#!">Learn more</a></div>
+            </div>
+            <div class="article__aside">
+              <div class="aside__img"><img src="./img/movie-page/news-4.png" alt="movie-page/news-4"/></div>
+              <div class="aside__content"><a class="aside__title" href="#!">Dark Knight trilogy IMAX tickets sell out rapidly.</a><a class="aside__link" href="#!">Learn more</a></div>
+            </div>
+          </div>
+          <div class="movie__trailer">
+            <iframe src="https://www.youtube.com/embed/UwrOQ2pYDxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="movie-footer">
+          <div class="news-wrapper">
+            <div class="news-card"><a class="news-card__img" href="#!"><img src="./img/ssta-news.png" alt="ssta-news"/></a><a class="news-card__title" href="#!">“Suicide Squad” voted as “The Best Viewed Movie” for 2016.</a></div>
+            <div class="news-card"><a class="news-card__img" href="#!"><img src="./img/joker.png" alt="joker"/></a><a class="news-card__title" href="#!">Patton Oswalt has a theory about the Joker from “The Dark Knight”.</a></div>
+            <div class="news-card"><a class="news-card__img" href="#!"><img src="./img/captain-marvel.png" alt="captain-marvel"/></a><a class="news-card__title" href="#!">“Captain Marvel” hit by online trolls, Disney was ready for them.</a></div>
+            <div class="news-card"><a class="news-card__img" href="#!"><img src="./img/avengers-news.png" alt="avengers-news"/></a><a class="news-card__title" href="#!">“Avengers: Endgame” tickets are already going for hundreds on Ebay.</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-desc">
+            <div class="footer__logo">
+              <div class="footer__logo-img"><img src="./img/icons/logo-footer.png" alt="logo"/></div>
+              <h4 class="footer__logo-text">KALLYAS</h4>
+            </div>
+            <div class="footer__copy">© Copyright 2019 KALLYAS - Hogash Studio. All rights reserved.</div>
+            <div class="footer__partners">
+              <div class="footer__partners-title">Our Partners</div>
+              <div class="footer__partners-item"><a class="footer__partners-link" href="#!"><img src="./img/icons/star-footer.png" alt="star"/></a></div>
+              <div class="footer__partners-item"><a class="footer__partners-link" href="#!"><img src="./img/icons/star-footer.png" alt="star"/></a></div>
+              <div class="footer__partners-item"><a class="footer__partners-link" href="#!"><img src="./img/icons/star-footer.png" alt="star"/></a></div>
+              <div class="footer__partners-item"><a class="footer__partners-link" href="#!"><img src="./img/icons/star-footer.png" alt="star"/></a></div>
+              <div class="footer__partners-item"><a class="footer__partners-link" href="#!"><img src="./img/icons/star-footer.png" alt="star"/></a></div>
+            </div>
+            <div class="footer__socials"><a class="footer__socials-link footer__socials--facebook" href="#!"><i class="fab fa-facebook-square"></i></a><a class="footer__socials-link footer__socials--google" href="#!"><i class="fab fa-google"></i></a><a class="footer__socials-link footer__socials--twitter" href="#!"><i class="fab fa-twitter"></i></a><a class="footer__socials-link footer__socials--instagram" href="#!"><i class="fab fa-instagram"></i></a></div>
+          </div>
+          <nav class="footer-nav">
+            <div class="footer-nav__movies">
+              <h4 class="footer-nav__title">Movies & Serials</h4>
+              <ul class="footer-nav__items">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Action</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Adventure</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Animation</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Biography</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Comedy</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Crime</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Documentary</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Drama</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Family</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Fantasy</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Film Noir</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">History</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Horror</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Music</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Musical</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Mystery</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Romance</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Sci-Fi</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Short</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Sport</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Superhero</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Thriller</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">War</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Western</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav__others">
+              <h4 class="footer-nav__title">Others</h4>
+              <ul class="footer-nav__items">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Home</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Top Rated Movies</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Box Office</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">TV</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Coming Soon</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Site Index</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Search</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">In Theaters</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Contact Us</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Register</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">News</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Press Room</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Advertising</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Jobs</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Conditions of Use</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Privacy Policy</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Interest-Based Ads</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <div class="background" id="background"></div>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="libs/mixitup/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

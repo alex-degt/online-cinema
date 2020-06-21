@@ -1,0 +1,39 @@
+section.movie
+	.container
+		.movie-header
+			.movie__img
+				img(src="./img/movie-page/poster.png", alt="The Dark Knight")
+			.movie__info
+				h3.movie__title THE DARK KNIGHT
+				ul.movie__desc
+					li.movie__desc-item Directed by: Christopher Nolan
+					li.movie__desc-item Release date:
+						span.movie__desc-item--blue July 18, 2008 (United States)
+					li.movie__desc-item Length: 
+						span.movie__desc-item--blue 2h 32m
+					li.movie__desc-item Category: Action, Comics, Adventure
+				.movie__text
+					p With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.
+					p Coleman Reese, an accountant at Wayne Enterprises, deduces that Bruce is Batman and threatens to publicize the information. Not wanting Reese's revelation to interfere with his plans, the Joker threatens to destroy a hospital unless Reese is killed within an hour.
+			.movie__rating
+				button.button-add add to list
+				.movie__stars (96%)
+					img(src="./img/icons/star.png", alt="star")
+					img(src="./img/icons/star.png", alt="star")
+					img(src="./img/icons/star.png", alt="star")
+					img(src="./img/icons/star.png", alt="star")
+					img(src="./img/icons/star.png", alt="star")
+		.movie-body
+			.movie__news
+				+articleAsideCard("movie-page/news-1", "The 10 Best Gifts For Fans Of The Dark Knight Trilogy.")
+				+articleAsideCard("movie-page/news-2", "10 Most Memorable Quotes From The Dark Knight Trilogy.")
+				+articleAsideCard("movie-page/news-3", "Captain Marvel' Passes 'The Dark Knight' at the Worldwide Box Office.")
+				+articleAsideCard("movie-page/news-4", "Dark Knight trilogy IMAX tickets sell out rapidly.")
+			.movie__trailer
+				iframe(src='https://www.youtube.com/embed/UwrOQ2pYDxY' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+		.movie-footer
+			.news-wrapper
+				+newsCard("ssta-news", "“Suicide Squad” voted as “The Best Viewed Movie” for 2016.")
+				+newsCard("joker", "Patton Oswalt has a theory about the Joker from “The Dark Knight”.")
+				+newsCard("captain-marvel", "“Captain Marvel” hit by online trolls, Disney was ready for them.")
+				+newsCard("avengers-news", "“Avengers: Endgame” tickets are already going for hundreds on Ebay.")
