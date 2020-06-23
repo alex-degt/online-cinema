@@ -1,0 +1,23 @@
+.section-movie
+	position: relative
+	display: flex
+	align-items: center
+	padding: 65px 0
+	background-image: url("../img/jw.jpg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		content: ""
+		background-color: rgba(0, 0, 0, 0.5)
+	@media (min-width: 1200px)
+		height: 800px
+
+.movie-wrapper
+	position: relative
+	z-index: 2

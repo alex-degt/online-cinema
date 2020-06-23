@@ -36,9 +36,6 @@
         <button class="button-sign">Sign Up</button>
       </div>
     </div>
-    <div class="trailer" id="trailer">
-      <iframe src=" https://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-    </div>
     <div class="nav-top" id="nav-top">
       <div class="nav-top_wrapper"><a class="nav__logo" href="#!">KALLYAS<img src="./img/icons/logo.png" alt="logo"/></a>
         <nav class="nav__menu">
@@ -74,7 +71,10 @@
               </div>
               <h2 class="header__title">THE AVENGERS</h2>
               <div class="header__desc">When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth.</div>
-              <div class="header__buttons"><a class="button-play-trailer" href="#trailer" rel="modal:open">play trailer</a>
+              <div class="header__buttons">
+                <div class="trailer" id="trailer">
+                  <iframe src=" https://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div><a class="button-play-trailer" href="#trailer" rel="modal:open">play trailer</a>
                 <button class="button-add">add to list</button>
               </div>
             </div>
@@ -390,25 +390,23 @@
         <button class="button-add load-more" id="load-more">load more</button>
       </div>
     </section>
-    <section class="section-film" style="background-image: url('./img/jwf.jpg')">
+    <section class="section-movie">
       <div class="container">
-        <div class="film-wrapper--left">
-          <div class="film__trailer">
-            <iframe src=" https://www.youtube.com/embed/vn9mMeWcgoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <div class="movie-wrapper">
+          <div class="film__badges">
+            <div class="badges">
+              <div class="badge--yellow">2018</div>
+              <div class="badge--blue">ACTION</div>
+              <div class="badge--orange">ADVENTURE</div>
+            </div>
           </div>
-          <div class="film__info--left">
-            <div class="film__badges">
-              <div class="badges">
-                <div class="badge--yellow">2018</div>
-                <div class="badge--blue">ACTION</div>
-                <div class="badge--orange">ADVENTURE</div>
-              </div>
-            </div>
-            <h2 class="film__title">JURASSIC WORLD: FALLEN KINGDOM</h2>
-            <div class="film__desc">Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic.</div>
-            <div class="film__buttons"><a class="button-film-info" href="movie-page.html">about the movie</a><a class="button-film-info--mobile" href="movie-page.html">about</a>
-              <button class="button-add">add to list</button>
-            </div>
+          <h2 class="film__title">JURASSIC WORLD: FALLEN KINGDOM</h2>
+          <div class="film__desc">JURASSIC WORLD: FALLEN KINGDOM", "Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic.</div>
+          <div class="film__buttons">
+            <div class="trailer" id="trailer">
+              <iframe src=" https://www.youtube.com/embed/e0_96_YQu0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div><a class="button-play-trailer" href="#trailer" rel="modal:open">play trailer</a>
+            <button class="button-add">add to list</button>
           </div>
         </div>
       </div>
