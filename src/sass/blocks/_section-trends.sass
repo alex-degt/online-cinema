@@ -3,9 +3,11 @@
 	background-color: #020d18
 
 .adv
-	display: flex
+	display: none
 	justify-content: center
 	margin-bottom: 50px
+	@media (min-width: 1200px)
+		display: flex
 
 .trends__title
 	margin-bottom: 25px
@@ -13,7 +15,6 @@
 	color: #b0b0b0
 	font-size: 14px
 	font-weight: 300
-
 
 .trends-card--wrapper
 	display: flex
@@ -68,7 +69,6 @@
 	@media (min-width: 1200px)
 		width: 222px
 		height: 197px
-
 
 .trends-card__title
 	display: inline-block
@@ -147,7 +147,6 @@
 		background-position: center
 		background-size: contain
 
-
 .watched-checkbox:checked + .custom-watched-checkbox:before
 	background-image: url("../img/icons/watched-red.png")
 
@@ -172,7 +171,6 @@
 		background-position: center
 		background-size: contain
 
-
 .slider-two .owl-nav button.owl-next
 	position: absolute
 	top: 35px
@@ -187,7 +185,7 @@
 		color: #ffffff
 	&:focus
 		outline: none
-	
+
 .slider-two .owl-nav button.owl-prev
 	position: absolute
 	top: 35px
